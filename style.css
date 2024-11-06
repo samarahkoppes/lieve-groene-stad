@@ -1,0 +1,610 @@
+
+
+body{
+    margin: 0;
+    background-color:rgb(176,178,125);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 8px;
+
+}
+
+
+
+  main section section {
+    padding: 0 0em;
+  }
+
+
+
+
+
+
+  /* Hamburger icon */
+.hamburger {
+  display: none;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  margin: 0px;
+  padding-right: 2em;
+}
+
+.bar {
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Navigatie menu */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(69,95,45);
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav ul li {
+  padding: 15px 15px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family:"Nerko One" ;
+  color: rgb(176,178,125);
+}
+
+/* Maak het hamburger menu zichtbaar op kleinere schermen */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  /* Als de checkbox (menu-toggle) is ingeschakeld, toon het menu */
+  #menu-toggle:checked + .hamburger + .nav {
+    transform: translateY(0);
+  }
+
+  /* Maak de hamburger bars een kruis als het menu open is */
+  #menu-toggle:checked + .hamburger .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #menu-toggle:checked + .hamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-toggle:checked + .hamburger .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+
+
+
+
+
+
+
+ /*bovenkant-pagina*/
+
+header {
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    background-color: rgb(176,178,125);
+  
+
+  }
+
+
+  .Homepage-foto{
+    display: flex;
+    background-image: url(images/voorkant-homepage.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vw;
+    justify-content: center;
+    align-items: center;
+    padding-top:2.5em;
+  }
+
+
+  .Homepage-foto p{
+    font-size: 1em;
+    color: rgb(176,178,125);
+    padding-top: 18em;
+    text-align: center;
+    font-family: "scriptorama-markdown-jf", sans-serif;
+    
+  }
+
+
+
+  .over-ons-vlak {
+    width: 100%;
+    height: 25em;
+  }
+
+  .over-ons-vlak .over-ons-groep {
+    display: flex;
+    position: absolute;
+    left: -23%;
+    width: 120%;
+  }
+
+  .over-ons-vlak .over-ons-groep div {
+    display: flex;
+    font-size: .9em;
+    flex-direction: column;
+  }
+
+  /* KNOP STYLING */
+  .over-ons-vlak .over-ons-groep div > a {
+    width: 100%;
+    height: 2em;
+    border-radius: .5em;
+    background-color: rgb( 70, 48,30);
+    text-align: center;
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    font-family: "scriptorama-markdown-jf", sans-serif;
+  }
+
+  .over-ons-vlak .over-ons-groep div > a img {
+    padding: .5em;
+    
+   
+  }
+
+
+
+
+  .over-ons-vlak .over-ons-groep  div > a p {
+    margin: 0px;
+    align-self: center;
+    padding: .5em .8em .5em 3em;
+  }
+
+  .locatie-vlak-homepage {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 5em;
+
+  }
+
+  .locatie-vlak-homepage img {
+    
+    padding-bottom: 2em;
+    
+  }
+
+
+
+
+  .locatie-vlak-homepage h2{
+    padding-bottom: 1em;
+    padding-top: 3em;
+    color: rgb(176,178,125);
+    font-family: "scriptorama-markdown-jf", sans-serif;
+    font-size: 1.5em;
+  }
+
+
+
+  .locatie-vlak-homepage .alle-locaties {
+    display: flex;
+    align-self: flex-start;
+    width: auto;
+    height: 2em;
+    border-radius: 1em;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(176,178,125);
+    
+
+    p {
+        margin: 0px;
+        padding: 0em 1em;
+        text-align: center;
+        align-self: center;
+        font-family: "Nerko One";
+        color:  rgb(69,95,45);
+        font-size: 1em;
+    }
+  }
+
+
+  .background-image {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/achtergrondjee.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 69em;
+    justify-content: flex-start;
+    padding-top:0em;
+  }
+
+
+  p{
+    font-family: "Indie Flower";
+  }
+
+  h2{
+    font-family: "scriptorama-markdown-jf", sans-serif;
+     font-size: 1.5em;
+     margin-top: 0em;
+     margin-bottom: 0em;
+     color:rgb(60,40,23);
+     
+  }
+
+
+
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 5px; /* Some padding */ 
+    border: 2px solid rgb(70,48,30);/* Gray border */
+    border-radius: 20px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    background-color:  rgb(176,178,125);
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: rgb(69,95,45);
+    padding: 12px 20px;
+    color: rgb(176,178,125) ;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .contact-formulier {
+   
+    padding-top: 1.3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1.5em;
+  }
+
+  
+
+
+.contact-vlak-homepage h2{
+    font-family: "scriptorama-markdown-jf", sans-serif;
+    padding-left: 0.6em;
+    padding-top: 4em;
+    text-align: center;
+
+
+}
+
+
+
+
+ /*locatie-pagina*/
+
+
+
+
+  .scroll_buttons {
+    overflow-x: scroll;
+    width: 100%;
+    margin-top: 3em;
+  }
+
+.scroll_buttons div {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+
+.scroll_buttons div a:nth-of-type(1) {
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    background-color: rgb(176,178,125);
+    color: rgb( 70, 48,30);
+    border-radius: 10em;
+
+}
+
+.scroll_buttons div img {
+    height: 20px;
+    width: 20px;
+    padding: .5em;
+    
+}
+
+.scroll_buttons div a {
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(176,178,125);
+    color: rgb( 70, 48,30);
+    border-radius: 10em; 
+  
+}
+
+
+.scroll_buttons div p{
+   font-family: "Nerko One"
+
+}
+
+
+ /*locatie-section*/
+
+
+hr{
+  color: rgb(176,178,125);
+  
+  
+  
+}
+
+table{
+  font-family:monospace;
+  color: rgb(176,178,125);
+  padding-bottom: 3em;
+  font-size: 0.8em;
+}
+td{
+padding-right: 2em;
+
+}
+
+.have-a-rol-locatie{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items:start;
+  width: 2em;
+}
+
+
+
+.locatie-info p {
+    color: rgb(176,178,125);
+    line-height: 1.2em;
+}
+.locatie-info img {
+    width: 100%;
+    padding-top: 4em;
+}
+
+
+
+
+
+.locatie-info h2 {
+    color:rgb(176,178,125) ;
+    padding-top: 1em;
+    
+}
+
+
+
+#test {
+    background-image: url(images/achtergrond-locaties.svg);
+    overflow-x: hidden;
+    padding: 2em 2em;
+} 
+
+.achtergrond{
+    background-image: url(images/achtergrond-info.svg);
+    overflow-x: hidden;
+    padding: 0em 2em;
+}
+
+
+
+.knop-locatiespage{
+    width: 19.5em;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(176,178,125);
+    color: rgb( 70, 48,30);
+    border-radius: 10em; 
+    font-family: "Nerko One"; 
+}
+
+
+
+ /*info-pagina*/
+
+
+.duurzame-locatie h2{
+    color:  rgb(176,178,125);
+    text-align: center;
+    font-size: 3em;
+    padding-top: 0.5em;
+}
+
+.duurzame-locatie img{
+    width: 100%;
+    padding-top: 0.9em;
+}
+
+.duurzame-locatie h3{
+    font-family:"Nerko One"; 
+    color:rgb(176,178,125) ;
+    font-size: 2em;
+    padding-top: 0.5em;
+    margin: 0px;
+    
+}
+
+.duurzame-locatie p{
+    color: rgb(176,178,125) ;
+    padding-top: 0em;
+    
+}
+
+
+.menu-section h3{
+    font-family:"Nerko One"; 
+    color:rgb( 70, 48,30);
+    font-size: 2.2em;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    text-align: center;
+    margin: 0px;
+
+}
+
+
+
+
+.foto-menu{
+    display: flex;
+    padding-right: 2em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    
+
+}
+.foto-menu img{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.menu-section-have-a-rol h3 {
+    font-family:"Nerko One"; 
+    color:rgb( 70, 48,30);
+    font-size: 2.5em;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+.laatstekopje-info p {
+    font-family: "Indie Flower";
+    color:rgb(176,178,125) ;
+    line-height: 1.4em;
+}
+
+.laatstekopje-info h3 {
+    font-family:"Nerko One"; 
+    color:rgb(176,178,125) ;
+    font-size: 2em;
+}
+
+.laatstekopje-info img{
+    width: 100%;
+    padding-top: 10em;
+  
+}
+
+.footer{
+    display: flex;
+    padding-right: 2em;
+    flex-direction:column;
+    justify-content: center;
+    align-items: start;
+    background-color: rgb(45,68,25);
+    padding-left: 1em;
+
+    
+}
+.footer ul{
+list-style-type: none;
+
+}
+.footer ul li{
+    font-family:"Nerko One"; 
+    color: rgb(176,178,125) ;
+    
+    }
+
+ /*over-ons-pagina*/
+
+.achtergrond-overons{
+    background-image: url(images/achtergrond-0verons.svg);
+    overflow-x: hidden;
+    padding: 0em 2em;
+}
+.overons h2{
+    color:rgb(176,178,125) ;
+    padding-top: 2.8em;
+    text-align: center;
+
+}
+.overons img{
+width: 100%;
+padding-top: 2em;
+}
+.overons p{
+color: rgb(176,178,125) ;
+line-height: 1.5em;
+
+}
