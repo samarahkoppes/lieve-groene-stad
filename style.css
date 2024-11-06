@@ -484,7 +484,7 @@ tr td:nth-of-type(2) {
 } 
 
 .achtergrond{
-    background-image: url(images/achtergrond-info.svg);
+    background-image: url(images/background-loctiee.svg);
     overflow-x: hidden;
     padding: 0em 2em;
 }
@@ -514,8 +514,8 @@ tr td:nth-of-type(2) {
 .duurzame-locatie h2{
     color:  rgb(176,178,125);
     text-align: center;
-    font-size: 3em;
-    padding-top: 0.5em;
+    font-size: 2em;
+    padding-top: 1em;
 }
 
 .duurzame-locatie img{
@@ -540,10 +540,10 @@ tr td:nth-of-type(2) {
 
 
 .menu-section h3{
-    font-family:"Nerko One"; 
+  font-family: "scriptorama-markdown-jf", sans-serif;
     color:rgb( 70, 48,30);
     font-size: 2.2em;
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 0em;
     text-align: center;
     margin: 0px;
@@ -571,10 +571,10 @@ tr td:nth-of-type(2) {
 }
 
 .menu-section-have-a-rol h3 {
-    font-family:"Nerko One"; 
+  font-family: "scriptorama-markdown-jf", sans-serif;
     color:rgb( 70, 48,30);
-    font-size: 2.5em;
-    padding-top: 1em;
+    font-size: 2em;
+    padding-top: 1.8em;
     padding-bottom: 0em;
     text-align: center;
     margin: 0px;
