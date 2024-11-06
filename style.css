@@ -34,11 +34,10 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  width: 30px;
-  height: 25px;
+  width: 42px;
+  height: 40px;
   cursor: pointer;
   margin: 0px;
-  padding-right: 2em;
 }
 
 .bar {
@@ -82,10 +81,30 @@ body::-webkit-scrollbar-thumb {
   color: rgb(176,178,125);
 }
 
+.menu-toggle {
+  visibility: hidden;
+}
+
+label img:nth-of-type(1) {
+  display: block;
+}
+
+label img:nth-of-type(2) {
+  display: none;
+}
+
 /* Maak het hamburger menu zichtbaar op kleinere schermen */
 @media screen and (max-width: 768px) {
   .hamburger {
     display: flex;
+  }
+
+  #menu-toggle:checked ~ .hamburger img:nth-of-type(1) {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .hamburger img:nth-of-type(2) {
+    display: block;
   }
 
   /* Als de checkbox (menu-toggle) is ingeschakeld, toon het menu */
@@ -167,6 +186,7 @@ header {
     display: flex;
     font-size: .9em;
     flex-direction: column;
+    width: 47vw;
   }
 
   /* KNOP STYLING */
@@ -178,6 +198,7 @@ header {
     text-align: center;
     align-self: end;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     text-decoration: none;
     color: white;
@@ -196,7 +217,7 @@ header {
   .over-ons-vlak .over-ons-groep  div > a p {
     margin: 0px;
     align-self: center;
-    padding: .5em .8em .5em 3em;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .locatie-vlak-homepage {
@@ -289,6 +310,15 @@ header {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     background-color:  rgb(176,178,125);
+    font-family: "Nerko One"
+  }
+
+  input[type=text]::placeholder {
+    color:rgb(60,40,23);
+  }
+
+  textarea::placeholder {
+    color:rgb(60,40,23);
   }
   
   /* Style the submit button with a specific background color etc */
@@ -299,6 +329,7 @@ header {
     border: none;
     border-radius: 30px;
     cursor: pointer;
+    align-self: flex-end;
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
@@ -308,11 +339,13 @@ header {
   
   /* Add a background color and some padding around the form */
   .contact-formulier {
-   
-    padding-top: 1.3em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 1.5em;
+    padding: 1.3em 2em 1.5em 2em;
+  }
+
+  .contact-formulier form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   
@@ -391,21 +424,26 @@ header {
 
 
 hr{
-  color: rgb(176,178,125);
+  border: solid 1px rgb(176,178,125);
   
   
   
 }
 
 table{
-  font-family:monospace;
+  font-family: "indie flower";
   color: rgb(176,178,125);
   padding-bottom: 3em;
   font-size: 0.8em;
+
 }
 td{
-padding-right: 2em;
+padding-right: 1.3em;
+letter-spacing: 1.2px;
+}
 
+tr td:nth-of-type(2) {
+  text-align: start;
 }
 
 .have-a-rol-locatie{
@@ -516,20 +554,21 @@ padding-right: 2em;
 
 
 .foto-menu{
-    display: flex;
+    /* display: flex;
     padding-right: 2em;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding-top: 3em;
-    
-
-}
-.foto-menu img{
-    padding-left: 1em;
-    padding-right: 1em;
+    overflow-x: scroll;
+    width: 100%;
 }
 
+.foto-menu div {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 1em;
+}
 
 .menu-section-have-a-rol h3 {
     font-family:"Nerko One"; 
