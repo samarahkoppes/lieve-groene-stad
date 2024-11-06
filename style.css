@@ -217,7 +217,7 @@ header {
   .over-ons-vlak .over-ons-groep  div > a p {
     margin: 0px;
     align-self: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:"Nerko One";
   }
 
   .locatie-vlak-homepage {
@@ -330,6 +330,7 @@ header {
     border-radius: 30px;
     cursor: pointer;
     align-self: flex-end;
+    font-family: "Nerko One";
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
@@ -646,4 +647,15 @@ padding-top: 2em;
 color: rgb(176,178,125) ;
 line-height: 1.5em;
 
+}
+
+.bedankt-berichtje h2{
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.5em;
+}
+
+.bedankt-berichtje article{
+  background-color:bisque;
 }
