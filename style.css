@@ -142,10 +142,14 @@ header {
     gap: 2rem;
     justify-content: space-between;
     background-color: rgb(176,178,125);
-  
+    background-image: url(images/boontjes-achtergrond.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+   
 
   }
 
+ 
 
   .Homepage-foto{
     display: flex;
@@ -310,15 +314,21 @@ header {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     background-color:  rgb(176,178,125);
-    font-family: "Nerko One"
+    font-family: "Nerko One";
   }
 
   input[type=text]::placeholder {
     color:rgb(60,40,23);
+    opacity: .8;
+  }
+
+  textarea {
+    height: 50px;
   }
 
   textarea::placeholder {
     color:rgb(60,40,23);
+    opacity: .8;
   }
   
   /* Style the submit button with a specific background color etc */
@@ -544,7 +554,7 @@ tr td:nth-of-type(2) {
   font-family: "scriptorama-markdown-jf", sans-serif;
     color:rgb( 70, 48,30);
     font-size: 2.2em;
-    padding-top: 2em;
+    padding-top: 1em;
     padding-bottom: 0em;
     text-align: center;
     margin: 0px;
@@ -575,7 +585,7 @@ tr td:nth-of-type(2) {
   font-family: "scriptorama-markdown-jf", sans-serif;
     color:rgb( 70, 48,30);
     font-size: 2em;
-    padding-top: 1.8em;
+    padding-top: 2.5em;
     padding-bottom: 0em;
     text-align: center;
     margin: 0px;
@@ -597,11 +607,13 @@ tr td:nth-of-type(2) {
     font-family:"Nerko One"; 
     color:rgb(176,178,125) ;
     font-size: 2em;
+    margin:0px;
+    padding-top: 0.5em;
 }
 
 .laatstekopje-info img{
     width: 100%;
-    padding-top: 10em;
+    padding-top: 6em;
   
 }
 
@@ -612,24 +624,28 @@ tr td:nth-of-type(2) {
     justify-content: center;
     align-items: start;
     background-color: rgb(45,68,25);
-    padding-left: 1em;
+    padding-left: 0.2em;
 
     
 }
 .footer ul{
 list-style-type: none;
+display: flex;
+gap: 4em;
+
 
 }
 .footer ul li{
     font-family:"Nerko One"; 
     color: rgb(176,178,125) ;
+    font-size: 1.1em;
     
     }
 
  /*over-ons-pagina*/
 
 .achtergrond-overons{
-    background-image: url(images/achtergrond-0verons.svg);
+    background-image: url(images/achtergrond-overonssss.svg);
     overflow-x: hidden;
     padding: 0em 2em;
 }
@@ -652,10 +668,19 @@ line-height: 1.5em;
 .bedankt-berichtje h2{
   text-align: center;
   padding-left: 1em;
-  padding-right: 1em;
-  font-size: 1.5em;
+  padding-top: 2em;
+  padding-right:0.5em;
+  font-size: 1.2em;
+  color: rgb(176,178,125) ;
 }
 
+.bedankt-berichtje p{
+  color:rgb(176,178,125) ;
+  text-align: center;
+}
+
+
 .bedankt-berichtje article{
-  background-color:bisque;
+  background-color: rgb(69,95,45);
+  height: 30em;
 }
