@@ -643,6 +643,22 @@ gap: 4em;
     
     }
 
+ .p-article-footer{      
+      padding-left: 2.5em;
+      color: rgb(176,178,125) ;
+      font-family:"Nerko One"; 
+      margin:0px;
+      font-size: 1em;
+
+    }
+
+.gemaakt{
+  background-color: rgb(34, 51, 19);
+  height: 2em;
+  margin: 0px;
+  padding-top: 0.3em;
+}
+  
  /*over-ons-pagina*/
 
 .achtergrond-overons{
