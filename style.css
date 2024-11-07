@@ -261,19 +261,20 @@ header {
     color: white;
     text-decoration: none;
     background-color: rgb(176,178,125);
-    
-
-    p {
-        margin: 0px;
-        padding: 0em 1em;
-        text-align: center;
-        align-self: center;
-        font-family: "Nerko One";
-        color:  rgb(69,95,45);
-        font-size: 1em;
-    }
+   
   }
 
+
+  .locatie-vlak-homepage .alle-locaties p{
+    margin: 0px;
+    padding: 0em 1em;
+    text-align: center;
+    align-self: center;
+    font-family: "Nerko One";
+    color:  rgb(69,95,45);
+    font-size: 1em;
+
+  }
 
   .background-image {
     display: flex;
@@ -651,10 +652,8 @@ gap: 4em;
 }
 .overons h2{
     color:rgb(176,178,125) ;
-    padding-top: 2.5em;
-    text-align: center;
-
-}
+    padding-top: 2em;
+    text-align: center;}
 .overons img{
 width: 100%;
 padding-top: 2em;
