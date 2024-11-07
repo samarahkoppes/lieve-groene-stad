@@ -651,7 +651,7 @@ gap: 4em;
 }
 .overons h2{
     color:rgb(176,178,125) ;
-    padding-top: 2.8em;
+    padding-top: 2.5em;
     text-align: center;
 
 }
@@ -665,22 +665,33 @@ line-height: 1.5em;
 
 }
 
+
+
+.achtergrond-bericht{
+  background-image: url(images/achtergrond-berichttje.svg);
+    overflow-x: hidden;
+    align-items: center;
+    
+}
+
 .bedankt-berichtje h2{
   text-align: center;
   padding-left: 1em;
-  padding-top: 2em;
+  padding-top: 21.5em;
   padding-right:0.5em;
   font-size: 1.2em;
-  color: rgb(176,178,125) ;
+  color: rgb(45,68,25);
 }
 
 .bedankt-berichtje p{
-  color:rgb(176,178,125) ;
+  color:rgb(45,68,25);
   text-align: center;
+  padding-bottom: 3em;
+  width: 35ch;
+  padding-left: 3em;
+  margin: 0px;
+  padding-top: 0.5em;
+
 }
 
 
-.bedankt-berichtje article{
-  background-color: rgb(69,95,45);
-  height: 30em;
-}
